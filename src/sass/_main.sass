@@ -7,6 +7,9 @@ body
     padding: 50px 84px 61px 84px
     margin: 0 auto
 
+
++header_section
+
 nav
     display: grid
     grid-template-columns: repeat(3, auto)
@@ -130,7 +133,6 @@ nav
             a
                 text-decoration: none
                 color: rgb(255, 255, 255)
-
     &_descr
         margin-top: 10px
 
@@ -138,28 +140,6 @@ nav
     display: grid
     grid-template-columns: repeat(2, 1fr)
     row-gap: 97px
-    &_wrap_1
-        display: flex
-        flex-direction: column
-        &_title
-            color: rgb(255, 255, 255)
-            font-size: 36px
-            font-weight: 700
-        &_title_descr
-            color: rgb(255, 255, 255)
-            font-size: 36px
-            font-weight: 300
-            line-height: 44px
-        &_text
-            width: 652px
-            color: rgb(255, 255, 255)
-            font-size: 16px
-            font-weight: 400
-            line-height: 20px
-        &_arrow
-            margin-top: -70px
-            margin-left: 160px
-            height: 100px
     &_mask
         width: 546px
     &_wrap_2
@@ -181,14 +161,49 @@ nav
             font-weight: 400
             line-height: 20px
 
-
-
-
+.why_build
+    display: flex
+    justify-content: space-between
+    column-gap: 10px
+    &_item
+        width: 310px
+        height: 511px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        border-radius: 40px
+        background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(67, 61, 96),rgb(33, 30, 46) 100%)
+        &_img_block
+            width: 220px
+            height: 220px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: rgba(14, 14, 14, 0.32)
+            border-radius: 50%
+        img
+            width: 190px
+            height: 190px
+        &_title
+            color: rgb(255, 255, 255)
+            font-size: 24px
+            font-weight: 700
+            &::after
+                content: ''
+                display: block
+                width: inherit
+                border: 1px solid rgba(192, 183, 232, 0.33)
+                margin-top: 18px
+        &_descr
+            width: 250px
+            color: rgb(255, 255, 255)
+            font-size: 12px
+            font-weight: 400
+        &_btn
+            +purple_btn(154px, 48px)
+        
 
 
 
         
-            
-
-
-            
