@@ -4,7 +4,7 @@ body
 
 .container
     width: 1440px
-    padding: 50px 84px 0 84px
+    padding: 50px 84px 61px 84px
     margin: 0 auto
 
 nav
@@ -112,6 +112,7 @@ nav
         display: flex
         align-items: center
         gap: 25px
+        height: 120px
         &:nth-child(2)
             border-right: 1px solid rgba(192, 183, 232, 0.33)
             border-left: 1px solid rgba(192, 183, 232, 0.33)
@@ -134,33 +135,57 @@ nav
         margin-top: 10px
 
 .introduction
-    display: flex
-    align-items: center
-    justify-content: space-between
-    &_title
-        color: rgb(255, 255, 255)
-        font-size: 36px
-        font-weight: 300
-        line-height: 44px
-        span
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    row-gap: 97px
+    &_wrap_1
+        display: flex
+        flex-direction: column
+        &_title
             color: rgb(255, 255, 255)
             font-size: 36px
             font-weight: 700
+        &_title_descr
+            color: rgb(255, 255, 255)
+            font-size: 36px
+            font-weight: 300
             line-height: 44px
-    &_descr
-        color: rgb(255, 255, 255)
-        font-size: 16px
-        font-weight: 400
-        line-height: 20px
-
-    &_descr
-        width: 652px
-    &_wrap
-        display: flex
-        img
-            margin-top: 12px
-            margin-left: -20px
+        &_text
+            width: 652px
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 400
+            line-height: 20px
+        &_arrow
+            margin-top: -70px
+            margin-left: 160px
             height: 100px
+    &_mask
+        width: 546px
+    &_wrap_2
+        display: flex
+        flex-direction: column
+        padding: 50px 0 0 25px
+        &_title
+            color: rgb(255, 255, 255)
+            font-size: 36px
+            font-weight: 700
+        &_title_descr
+            color: rgba(255, 255, 255, 0.95)
+            font-size: 36px
+            font-weight: 300
+            line-height: 44px
+        &_text
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 400
+            line-height: 20px
+
+
+
+
+
+
 
         
             
