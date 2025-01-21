@@ -328,16 +328,18 @@ nav
 
 footer
     .container
+        padding-bottom: 15px
         &::after
-            content: ''
-            display: block
-            width: 1269px
-            height: 1px
-            margin-top: 15px
-            background: linear-gradient(rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69))
+                content: ''
+                display: block
+                width: 1269px
+                height: 1px
+                margin-top: 15px
+                background: linear-gradient(rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69))
     .footer_wrap
         display: grid
         grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 110px
     .logo_pic
         height: 187px
     .footer_menu
@@ -357,7 +359,16 @@ footer
             &_link
                 width: 32px
                 height: 32px
-                background: rgb(192, 183, 232)
-                border-radius: 50%
+        h3
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 700
         .build_btn
             +purple-btn(214px, 48px)
+    
+    h2
+        color: rgb(255, 255, 255)
+        font-size: 14px
+        font-weight: 700
+        text-align: center
+        padding-bottom: 15px
