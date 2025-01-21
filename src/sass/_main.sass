@@ -284,7 +284,7 @@ nav
 .sixth
     .container
         width: 1275px
-        height: 750px
+        // height: 800px
         border-radius: 100px
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
         background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(64, 58, 95),rgb(33, 30, 46) 100%)
@@ -310,26 +310,20 @@ nav
                 font-weight: 300
         .form_block
             margin-top: 60px
+            display: inline-block
+            text-align: center
             &_input
-                width: 524px
-                height: 72px
-                box-sizing: border-box
-                border: 1px solid rgb(255, 255, 255)
-                border-radius: 40px
-                background-color: transparent
+                +form_pattern(524px, 72px)
             &_input_big
-                width: 1058px
-                height: 72px
-                box-sizing: border-box
-                border: 1px solid rgb(255, 255, 255)
-                border-radius: 40px
-                background-color: transparent
+                +form_pattern(1058px, 72px)
             &_textarea
-                width: 1058px
-                height: 210px
-                box-sizing: border-box
-                border: 1px solid rgb(255, 255, 255)
-                border-radius: 40px
-                background-color: transparent
+                +form_pattern(1058px, 210px)
+                min-height: 210px
+                resize: vertical
+                padding: 42px
+            &_submit
+                display: block
+                margin: 0 auto
+                +purple_btn(214px, 48px)
 
 
