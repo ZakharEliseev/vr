@@ -11,10 +11,12 @@ body
 +header_section
 
 nav
-    display: grid
-    grid-template-columns: repeat(3, auto)
-    justify-content: space-between
-    align-items: center
+    .container
+        display: grid
+        grid-template-columns: repeat(3, auto)
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 0
 
 .logo
     display: flex
@@ -55,14 +57,13 @@ nav
             +purple_btn(155px, 48px)
 
 .first_content
-    margin-top: 146px
     &_wrap
         display: flex
         justify-content: space-between
     h1
         color: rgb(255, 255, 255)
     .dive
-        font-size: 40px
+        font-size: 20px
         font-weight: 700
         background: linear-gradient(rgb(192, 183, 232), rgb(129, 118, 175), rgb(255, 255, 255))
         -webkit-background-clip: text
@@ -106,7 +107,7 @@ nav
     grid-template-columns: repeat(3, 1fr)
     align-items: center
     align-content: center
-    margin-top: 94px
+    margin-top: 40px
     list-style-type: none
     border-radius: 90px
     box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01)
@@ -264,6 +265,7 @@ nav
             color: rgb(52, 48, 69)
             font-size: 64px
             font-weight: 700
+            outline: 20px solid rgba(13, 13, 13, 0.32)
     .how_build_descr
         display: flex
         justify-content: space-around
@@ -272,11 +274,12 @@ nav
             display: flex
             align-items: start
             column-gap: 10px
-            color: rgb(255, 255, 255)
-            font-size: 24px
-            font-weight: 700
-            line-height: 29px
-            text-align: left
+            p
+                color: rgb(255, 255, 255)
+                font-size: 24px
+                font-weight: 700
+                line-height: 29px
+                text-align: left
             img
                 width: 23px
                 height: 22px
