@@ -1,211 +1,206 @@
-// @import "mixin"
 body
     background-color: rgb(48, 44, 66)
 
 .container
     width: 1440px
-    padding: 50px 84px 61px 84px
+    padding: 50px 84px 30px 84px
     margin: 0 auto
 
 
-+header_section
-
 nav
-    .container
-        display: grid
-        grid-template-columns: repeat(3, auto)
-        justify-content: space-between
-        align-items: center
-        padding-bottom: 0
-
-.logo
-    display: flex
-    align-items: center
-    gap: 15px
-    &_pic
-        height: 119px
-    &_name
-        height: 46px
-
-.menu
-    width: 385px
-    display: flex
-    justify-content: space-around
-    &_link
-        list-style-type: none
-        a
-            text-decoration: none
-            color: rgb(255, 255, 255)
-            font-size: 12px
-            font-weight: 700
-    &_buttons
-        &_contacts
-            width: 154px
-            height: 48px
-            outline: none
-            cursor: pointer
-            background-color: inherit
-            border: 2px solid rgb(255, 255, 255)
-            border-radius: 40px
-            color: rgb(255, 255, 255)
-            font-size: 12px
-            font-weight: 700
-            text-align: center
-            color: rgb(255, 255, 255)
-            margin-right: 38px
-        &_join
-            +purple_btn(155px, 48px)
-
-.first_content
-    &_wrap
-        display: flex
-        justify-content: space-between
-    h1
-        color: rgb(255, 255, 255)
-    .dive
-        font-size: 20px
-        font-weight: 700
-        background: linear-gradient(rgb(192, 183, 232), rgb(129, 118, 175), rgb(255, 255, 255))
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent 
-    .virtual_reality
-        font-size: 46px
-        font-weight: 700
-        background: linear-gradient(rgb(255, 255, 255), rgb(192, 183, 232), rgb(129, 118, 175))
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-    h3
-        width: 450px
-        color: rgb(255, 255, 255)
-        font-size: 16px
-        font-weight: 400
-        line-height: 20px
-    &_build
-        +purple_btn(214px, 48px)
-    &_action
-        display: flex
-        align-items: center
-        align-self: start
-        gap: 10px
-        margin-top: 66px
-        img
-            height: 100px
-    &_mask
-        width: 524px
-        height: 455px
-        // background: url('../img/rectangle-bg.svg') no-repeat center center / cover
-        background: url('../img/Rectangle.svg') no-repeat center center / cover
-        img 
-            display: block
-            margin: 10px 0 0 10px
-            padding: 10px 0px 3px 5px
-.contact_info
-    height: 167px
-    padding: 60px 35px
-    gap: 23px
+    width: 1440px
+    padding: 50px 84px 61px 84px
+    margin: 0 auto
     display: grid
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, auto)
+    justify-content: space-between
     align-items: center
-    align-content: center
-    margin-top: 40px
-    list-style-type: none
-    border-radius: 90px
-    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01)
-    background: radial-gradient(2901.00% 50.16% at 50% 54%,rgba(58, 52, 86, 0.95),rgb(33, 30, 46) 100%)
-    &_item 
+    padding-bottom: 0
+    .logo
         display: flex
         align-items: center
-        gap: 25px
-        height: 120px
-        &:nth-child(2)
-            border-right: 1px solid rgba(192, 183, 232, 0.33)
-            border-left: 1px solid rgba(192, 183, 232, 0.33)
-            padding-left: 50px
-        &:nth-child(3)
-            border: none  
-        h4
-            color: rgb(255, 255, 255)
-            font-size: 24px
-            font-weight: 700
-        h5
-            color: rgb(255, 255, 255)
-            font-size: 14px
-            font-weight: 400
+        gap: 15px
+        &_pic
+            height: 119px
+        &_name
+            height: 46px
+
+    .menu
+        width: 385px
+        display: flex
+        justify-content: space-around
+        &_link
+            list-style-type: none
             a
                 text-decoration: none
                 color: rgb(255, 255, 255)
-    &_descr
-        margin-top: 10px
+                font-size: 12px
+                font-weight: 700
+        &_buttons
+            width: 348px
+            display: flex
+            justify-content: space-between
+            &_contacts
+                +purple_btn(155px, 48px)
+                background: inherit
+                color: rgb(255, 255, 255)
+            &_join
+                +purple_btn(155px, 48px)
 
-.introduction
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    row-gap: 97px
-    &_mask
-        width: 546px
-    &_wrap
+.first
+    +section_size
+    &_content
         display: flex
-        flex-direction: column
-        padding: 50px 0 0 25px
-        &_title
+        justify-content: space-between
+        h1
             color: rgb(255, 255, 255)
-            font-size: 36px
-            font-weight: 700
-        &_title_descr
-            color: rgba(255, 255, 255, 0.95)
-            font-size: 36px
-            font-weight: 300
-            line-height: 44px
-        &_text
+            .dive
+                font-size: 46px
+                font-weight: 700
+                background: linear-gradient(rgb(192, 183, 232), rgb(129, 118, 175), rgb(255, 255, 255))
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent 
+            .virtual_reality
+                font-size: 46px
+                font-weight: 700
+                background: linear-gradient(rgb(255, 255, 255), rgb(192, 183, 232), rgb(129, 118, 175))
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+        h3
+            width: 450px
             color: rgb(255, 255, 255)
             font-size: 16px
             font-weight: 400
             line-height: 20px
-
-.why_build
-    display: flex
-    justify-content: space-between
-    column-gap: 10px
-    &_item
-        width: 310px
-        height: 511px
-        display: flex
-        flex-direction: column
-        justify-content: space-around
-        align-items: center
-        border-radius: 40px
-        background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(67, 61, 96),rgb(33, 30, 46) 100%)
-        &_img_block
-            width: 220px
-            height: 220px
+            margin-bottom: 66px
+        &_action
             display: flex
-            justify-content: center
             align-items: center
-            background-color: rgba(14, 14, 14, 0.32)
-            border-radius: 50%
-        img
-            width: 190px
-            height: 190px
-        &_title
-            color: rgb(255, 255, 255)
-            font-size: 24px
-            font-weight: 700
-            &::after
-                content: ''
+            align-self: start
+            gap: 10px
+            &_build
+                +purple_btn(214px, 48px)
+            img
+                height: 100px
+        &_mask
+            width: 524px
+            height: 455px
+            background: url('../img/Rectangle.svg') no-repeat center center / cover
+            img 
                 display: block
-                width: inherit
-                border: 1px solid rgba(192, 183, 232, 0.33)
-                margin-top: 18px
-        &_descr
-            width: 250px
-            color: rgb(255, 255, 255)
-            font-size: 12px
-            font-weight: 400
-        &_btn
-            +purple_btn(154px, 48px)
+                margin: 10px 0 0 10px
+                padding: 10px 0px 3px 5px    
+    &_contact_info
+        height: 167px
+        padding: 60px 35px
+        gap: 23px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        align-items: center
+        align-content: center
+        margin-top: 40px
+        list-style-type: none
+        border-radius: 90px
+        box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01)
+        background: radial-gradient(2901.00% 50.16% at 50% 54%,rgba(58, 52, 86, 0.95),rgb(33, 30, 46) 100%)
+        &_item 
+            display: flex
+            align-items: center
+            gap: 25px
+            height: 120px
+            &:nth-child(2)
+                border-right: 1px solid rgba(192, 183, 232, 0.33)
+                border-left: 1px solid rgba(192, 183, 232, 0.33)
+                padding-left: 50px
+            &:nth-child(3)
+                border: none  
+            h4
+                color: rgb(255, 255, 255)
+                font-size: 24px
+                font-weight: 700
+                margin-bottom: 10px
+            h5
+                color: rgb(255, 255, 255)
+                font-size: 14px
+                font-weight: 400
+                a
+                    text-decoration: none
+                    color: rgb(255, 255, 255)
+
+.second
+    +section_size
+    +header_section(270px)
+    .header_section
+        margin-bottom: 40px
+    &_content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        row-gap: 97px
+        img
+            width: 546px
+        &_wrap
+            display: flex
+            flex-direction: column
+            padding: 50px 0 0 25px
+            &_title
+                color: rgb(255, 255, 255)
+                font-size: 36px
+                font-weight: 700
+            &_descr
+                color: rgba(255, 255, 255, 0.95)
+                font-size: 36px
+                font-weight: 300
+                line-height: 44px
+            &_text
+                color: rgb(255, 255, 255)
+                font-size: 16px
+                font-weight: 400
+                line-height: 20px
+
+.third
+    +section_size
+    +header_section(270px)
+    .header_section
+        margin-bottom: 40px
+    &_content
+        display: flex
+        justify-content: space-between
+        column-gap: 10px
+        &_item
+            width: 310px
+            height: 511px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            border-radius: 40px
+            background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(67, 61, 96),rgb(33, 30, 46) 100%)
+            div
+                width: 190px
+                height: 190px
+                display: flex
+                justify-content: center
+                align-items: center
+                outline: 20px solid rgba(13, 13, 13, 0.32)
+                border-radius: 50%
+            h3
+                color: rgb(255, 255, 255)
+                font-size: 24px
+                font-weight: 700
+                padding-bottom: 10px
+                border-bottom: 2px solid rgba(192, 183, 232, 0.33)
+            p
+                width: 250px
+                color: rgb(255, 255, 255)
+                font-size: 12px
+                font-weight: 400
+            a
+                +purple_btn(154px, 48px)
         
-.technologies
-    &_wrap
+.fourth
+    +section_size
+    &_text
+        position: relative
         width: 1278px
         height: 303px
         display: flex
@@ -222,67 +217,76 @@ nav
             font-size: 36px
             font-weight: 300
     &_down
-        width: 90px
-        height: 90px
-        margin: 0 auto
-        margin-top: -40px
+        width: 70px
+        height: 70px
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -50%)
         display: flex
         justify-content: center
         align-items: center
+        background: linear-gradient(267.78deg, rgb(192, 183, 232) -0.6%,rgb(129, 118, 175) 98.314%)
         border-radius: 50%
-        background-color: rgba(14, 14, 14, 0.32)
-        background-size: 80px 80px
-        div
-            width: 70px
-            height: 70px
-            display: flex
-            justify-content: center
-            align-items: center
-            background: linear-gradient(267.78deg, rgb(192, 183, 232) -0.6%,rgb(129, 118, 175) 98.314%)
-            border-radius: 50%
-            img
-                width: 25px
-                height: 12px
+        outline: 20px solid rgba(13, 13, 13, 0.32)
+        a
+            width: 25px
+            height: 14px
+            background: url('../img/icons/arrow_down.svg') no-repeat center center / cover
     &_brands
         display: flex
         justify-content: space-between
 
 .fifth
-    .header_section_arrow
-        margin-left: 340px
-    .how_build_numbers
-        display: flex
-        justify-content: space-around
-        margin-top: 100px
+    +section_size
+    +header_section(340px)
+    .header_section
+        margin-bottom: 50px
+    &_numbers
+        display: grid
+        grid-auto-flow: column
+        justify-items: center
         &_item
             width: 159px
             height: 159px
-            display: flex
-            justify-content: center
-            align-items: center
+            // display: grid
+            // grid-template-rows: 159px 145px
+            // place-items: center
             background: linear-gradient(251.38deg, rgb(192, 183, 232) 12.874%,rgb(129, 118, 175) 89.331%)
             border-radius: 50%
-            color: rgb(52, 48, 69)
-            font-size: 64px
-            font-weight: 700
             outline: 20px solid rgba(13, 13, 13, 0.32)
-    .how_build_descr
-        display: flex
-        justify-content: space-around
-        margin-top: 25px
-        &_item
-            display: flex
-            align-items: start
-            column-gap: 10px
-            p
-                color: rgb(255, 255, 255)
-                font-size: 24px
-                font-weight: 700
-                line-height: 29px
-                text-align: left
-            img
-                width: 23px
-                height: 22px
+            &_text
+                // display: flex
+                h3
+                    color: rgb(52, 48, 69)
+                    font-size: 64px
+                    font-weight: 700
+                p
+                    display: block
+                    color: rgb(255, 255, 255)
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 29px
+                    text-align: left
+                img
+                    width: 23px
+                    height: 22px
+    // &_text
+    //     display: flex
+    //     justify-content: space-around
+    //     margin-top: 25px
+    //     &_item
+    //         display: flex
+    //         align-items: start
+    //         column-gap: 10px
+    //         p
+    //             color: rgb(255, 255, 255)
+    //             font-size: 24px
+    //             font-weight: 700
+    //             line-height: 29px
+    //             text-align: left
+    //         img
+    //             width: 23px
+    //             height: 22px
 
 .sixth
     .container

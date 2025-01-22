@@ -1,6 +1,9 @@
 =purple_btn($w_size, $h_size)
     width: $w_size
     height: $h_size
+    display: flex
+    justify-content: center
+    align-items: center
     outline: none
     cursor: pointer
     border-radius: 40px
@@ -9,26 +12,30 @@
     color: rgb(52, 48, 69)
     font-size: 12px
     font-weight: 700
-    text-align: center
+    text-decoration: none
 
-=header_section
+
+=header_section($left)
     .header_section_wrap
         display: flex
         justify-content: space-between
-    .header_section_title
+    .header_section_wrap_text
+        position: relative
+    .header_section_wrap_title
         color: rgb(255, 255, 255)
         font-size: 36px
         font-weight: 700
-    .header_section_title_descr
+    .header_section_wrap_descr
         color: rgb(255, 255, 255)
         font-size: 36px
         font-weight: 300
         line-height: 44px
-    .header_section_arrow
-        margin-top: -70px
-        margin-left: 270px
+    .header_section_wrap_arrow
+        position: absolute
+        top: 14px
+        left: $left
         height: 100px
-    .header_section_text
+    .header_section_wrap_describe
         width: 652px
         color: rgb(255, 255, 255)
         font-size: 16px
@@ -52,4 +59,9 @@
         color: rgb(255, 255, 255)
         font-size: 14px
         font-weight: 400
+
+=section_size
+    width: 1440px
+    padding: 50px 84px 61px 84px
+    margin: 0 auto
 
