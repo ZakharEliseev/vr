@@ -242,51 +242,36 @@ nav
     .header_section
         margin-bottom: 50px
     &_numbers
-        display: grid
-        grid-auto-flow: column
-        justify-items: center
+        display: flex
+        justify-content: space-around
         &_item
-            width: 159px
-            height: 159px
-            // display: grid
-            // grid-template-rows: 159px 145px
-            // place-items: center
-            background: linear-gradient(251.38deg, rgb(192, 183, 232) 12.874%,rgb(129, 118, 175) 89.331%)
-            border-radius: 50%
-            outline: 20px solid rgba(13, 13, 13, 0.32)
+            h3
+                width: 159px
+                height: 159px
+                display: flex
+                align-items: center
+                justify-content: center
+                background: linear-gradient(251.38deg, rgb(192, 183, 232) 12.874%,rgb(129, 118, 175) 89.331%)
+                border-radius: 50%
+                outline: 20px solid rgba(13, 13, 13, 0.32)
+                color: rgb(52, 48, 69)
+                font-size: 64px
+                font-weight: 700
+                margin-bottom: 30px
             &_text
-                // display: flex
-                h3
-                    color: rgb(52, 48, 69)
-                    font-size: 64px
-                    font-weight: 700
+                display: flex
+                align-items: flex-start
                 p
                     display: block
                     color: rgb(255, 255, 255)
                     font-size: 24px
                     font-weight: 700
                     line-height: 29px
-                    text-align: left
                 img
                     width: 23px
                     height: 22px
-    // &_text
-    //     display: flex
-    //     justify-content: space-around
-    //     margin-top: 25px
-    //     &_item
-    //         display: flex
-    //         align-items: start
-    //         column-gap: 10px
-    //         p
-    //             color: rgb(255, 255, 255)
-    //             font-size: 24px
-    //             font-weight: 700
-    //             line-height: 29px
-    //             text-align: left
-    //         img
-    //             width: 23px
-    //             height: 22px
+                    margin-right: 10px
+ 
 
 .sixth
     .container
