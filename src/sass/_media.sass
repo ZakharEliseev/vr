@@ -1,0 +1,162 @@
+@media ( max-width: 390px )
+    nav
+        width: 390px
+        padding: 23px
+        display: flex
+        justify-content: space-between
+        .logo
+            &_pic
+                height: 68px
+            &_name
+                height: 28px
+        .hamburger
+            display: block
+            width: 26px
+            height: 12px
+            span
+                display: block
+                height: 2px 
+                width: 100%      
+                background-color: #fff  
+                margin-bottom: 2px  
+                transition: 0.5s all
+        .menu
+            display: none
+            &_buttons
+                display: none
+    .first
+        width: 390px
+        padding: 23px
+        &_content
+            display: flex
+            flex-direction: column-reverse
+            h1
+                font-size: 24px
+                text-align: center
+                .dive
+                    font-size: 24px
+                .virtual_reality
+                    font-size: 24px
+            h3
+                display: none
+            &_action
+                justify-content: center
+                &_build
+                    +purple_btn(292px, 52px)
+                a
+                    &:nth-child(2)
+                        display: none    
+            &_mask
+                width: 340px
+                height: 296px
+                img
+                    width: 318px
+                    height: 277px
+        &_contact_info
+            width: 347px
+            height: 109px
+            display: flex
+            align-items: center
+            &_item
+                &:nth-child(n + 2)
+                    display: none
+            h4
+                display: none
+
+    .second
+        width: 390px
+        padding: 23px
+        .header_section
+            .header_section_wrap
+                justify-content: center
+            .header_section_wrap_title
+                font-size: 26px
+            .header_section_wrap_descr
+                font-size: 26px
+            .header_section_wrap_arrow
+                display: none
+            .header_section_wrap_describe
+                display: none
+        &_content
+            display: flex
+            flex-direction: column
+            row-gap: 10px
+            img
+                width: 336px
+                height: 368px
+            &_wrap
+                padding: 0
+                h2
+                    display: none
+                p
+                    display: none
+                &_text
+                    font-size: 12px
+
+    .third
+        width: 390px
+        padding: 23px
+        .header_section
+            margin-bottom: 10px
+            .header_section_wrap
+                justify-content: center
+            .header_section_wrap_title
+                font-size: 26px
+            .header_section_wrap_descr
+                font-size: 26px
+            .header_section_wrap_arrow
+                display: none
+            .header_section_wrap_describe
+                display: none
+        &_content
+            justify-content: center
+            column-gap: 0
+            &_item
+                &:nth-child(n + 2)
+                    display: none
+            a
+                +purple_btn(250px, 48px)
+
+    .fourth
+        width: 390px
+        padding: 23px
+        &_text
+            width: 348px
+            height: 163px
+            border-radius: 80px
+            margin-bottom: 20px
+            h2
+                font-size: 16px
+            p
+                font-size: 24px
+        &_down
+            display: none
+        &_brands
+            justify-content: center
+            img
+                &:not(:nth-child(1))
+                    display: none
+            
+    .fifth
+        width: 390px
+        padding: 23px
+        .header_section
+            margin-bottom: 30px
+            .header_section_wrap
+                justify-content: center
+            .header_section_wrap_title
+                font-size: 26px
+            .header_section_wrap_descr
+                font-size: 26px
+            .header_section_wrap_arrow
+                display: none
+            .header_section_wrap_describe
+                display: none
+        &_numbers
+            &_item
+                &:nth-child(n + 2)
+                    display: none
+
+    .sixth
+        width: 390px
+        padding: 23px

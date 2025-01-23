@@ -24,7 +24,8 @@ nav
             height: 119px
         &_name
             height: 46px
-
+    .hamburger
+        display: none
     .menu
         width: 385px
         display: flex
@@ -245,6 +246,9 @@ nav
         display: flex
         justify-content: space-around
         &_item
+            display: flex
+            flex-direction: column
+            align-items: center
             h3
                 width: 159px
                 height: 159px
@@ -272,79 +276,88 @@ nav
                     height: 22px
                     margin-right: 10px
  
-
 .sixth
-    .container
-        width: 1275px
-        margin-top: 112px
-        border-radius: 100px
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
-        background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(64, 58, 95),rgb(33, 30, 46) 100%)
-        .join
-            display: flex
-            flex-direction: column
-            align-items: center
-            &_title
-                color: rgb(255, 255, 255)
-                font-size: 36px
-                font-weight: 700
-                text-align: center
-                &::after
-                    content: ""
-                    display: block
-                    width: 414px
-                    height: 2px
-                    margin: 30px 0 21px 0
-                    background: linear-gradient(rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69))
-            &_title_descr
-                color: rgb(255, 255, 255)
-                font-size: 36px
-                font-weight: 300
-        .form_block
-            margin-top: 60px
-            display: inline-block
+    width: 1275px
+    min-height: 750px
+    padding: 50px 84px 30px 84px
+    margin: 0 auto
+    border-radius: 100px
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(64, 58, 95),rgb(33, 30, 46) 100%)
+    .form_header
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 40px
+        &_title
+            color: rgb(255, 255, 255)
+            font-size: 36px
+            font-weight: 700
             text-align: center
+        &_descr
+            color: rgb(255, 255, 255)
+            font-size: 36px
+            font-weight: 300
+            border-bottom-width: 3px
+            border-image: linear-gradient(to right, rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69)) 1
+            border-bottom-style: solid
+            padding-bottom: 20px
+    .form_block
+        margin: 0 auto
+        .form_section
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(5, auto)
             &_input
                 +form_pattern(524px, 72px)
             &_input_big
+                grid-column: span 2
                 +form_pattern(1058px, 72px)
             &_textarea
+                grid-column: span 2
                 +form_pattern(1058px, 210px)
                 min-height: 210px
                 resize: vertical
                 padding: 42px
             &_submit
-                display: block
+                grid-column: span 2  
                 margin: 0 auto
                 +purple_btn(214px, 48px)
 
 footer
-    .container
-        padding-bottom: 15px
-        &::after
-                content: ''
-                display: block
-                width: 1269px
-                height: 1px
-                margin-top: 15px
-                background: linear-gradient(rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69))
-    .footer_wrap
-        display: grid
-        grid-template-columns: repeat(4, 1fr)
-        grid-column-gap: 110px
+    width: 1440px
+    padding: 50px 84px 15px 84px
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: auto auto
+    row-gap: 15px
+    grid-column-gap: 110px
     .logo_pic
         height: 187px
     .footer_menu
         display: grid
         grid-template-rows: repeat(5, 1fr)
+        list-style-type: none
+        a
+            text-decoration: none
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 700
     .footer_submenu
         display: grid
         grid-template-rows: repeat(4, 1fr)
+        list-style-type: none
+        a
+            text-decoration: none
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 700
     .footer_social
         display: flex
         flex-direction: column
         justify-content: space-between
-        .social_menu
+        &_menu
             display: flex
             justify-content: space-between
             list-style-type: none
@@ -355,12 +368,14 @@ footer
             color: rgb(255, 255, 255)
             font-size: 16px
             font-weight: 700
-        .build_btn
+        .footer_social_btn
             +purple-btn(214px, 48px)
-    
     h2
         color: rgb(255, 255, 255)
         font-size: 14px
         font-weight: 700
         text-align: center
-        padding-bottom: 15px
+        border-image: linear-gradient(to right, rgb(52, 48, 69), rgb(192, 183, 232), rgb(129, 118, 175), rgb(52, 48, 69)) 1
+        border-top-style: solid
+        padding: 15px 0 15px 0
+        grid-column: span 4
