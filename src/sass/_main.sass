@@ -1,46 +1,46 @@
 body
     background-color: rgb(48, 44, 66)
 
-nav
+.nav
     width: 1440px
     padding: 50px 84px 61px 84px
     margin: 0 auto
     display: grid
     grid-template-columns: repeat(3, auto)
-    justify-content: space-between
+    justify-conavntent: space-between
     align-items: center
     padding-bottom: 0
-    .logo
+    &-logo
         display: flex
         align-items: center
         gap: 15px
-        &_pic
+        &__pic
             height: 119px
-        &_name
+        &__name
             height: 46px
-    .hamburger
+    &-hamburger
         display: none
-    .menu
+    &-menu
         width: 385px
         display: flex
         justify-content: space-around
-        &_link
+        &__item
             list-style-type: none
-            a
+            &_link
                 text-decoration: none
                 color: rgb(255, 255, 255)
                 font-size: 12px
                 font-weight: 700
-        &_buttons
-            width: 348px
-            display: flex
-            justify-content: space-between
-            &_contacts
-                +purple_btn(155px, 48px)
-                background: inherit
-                color: rgb(255, 255, 255)
-            &_join
-                +purple_btn(155px, 48px)
+    &-buttons
+        width: 348px
+        display: flex
+        justify-content: space-between
+        &__contacts
+            +purple_btn(155px, 48px)
+            background: inherit
+            color: rgb(255, 255, 255)
+        &__join
+            +purple_btn(155px, 48px)
 
 .first
     +section_size

@@ -1,15 +1,15 @@
 @media ( max-width: 391px )
-    nav
+    .nav
         width: 390px
         padding: 23px
         display: flex
         justify-content: space-between
-        .logo
-            &_pic
+        &-logo
+            &__pic
                 height: 68px
-            &_name
+            &__name
                 height: 28px
-        .hamburger
+        &-hamburger
             display: block
             width: 33px
             height: 23px
@@ -36,7 +36,7 @@
                         transform: translateY(3px) rotate(45deg)
                         
                         
-        .menu
+        &-menu
             position: fixed
             right: 100px
             top: -100%
@@ -50,8 +50,8 @@
             &_active
                 position: absolute
                 top: 15px
-            &_buttons
-                display: none
+        &-buttons
+            display: none
     .first
         width: 390px
         padding: 23px
