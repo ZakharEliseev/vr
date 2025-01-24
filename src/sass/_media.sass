@@ -1,4 +1,4 @@
-@media ( max-width: 390px )
+@media ( max-width: 391px )
     nav
         width: 390px
         padding: 23px
@@ -11,17 +11,45 @@
                 height: 28px
         .hamburger
             display: block
-            width: 26px
-            height: 12px
+            width: 33px
+            height: 23px
             span
                 display: block
-                height: 2px 
+                height: 3px 
                 width: 100%      
-                background-color: #fff  
-                margin-bottom: 2px  
+                border-radius: 40px
+                background: linear-gradient(90.00deg, rgb(192, 183, 232) -15.789%,rgb(129, 118, 175) 100%) 
+                margin-bottom: 7px  
                 transition: 0.5s all
+                &:nth-child(2)
+                    position: relative
+                    left: 9px
+                    width: 24px
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:first-child
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+                        
+                        
         .menu
-            display: none
+            position: fixed
+            right: 100px
+            top: -100%
+            width: 26%
+            height: 28vh
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            gap: 10px
+            transition: 0.6s all
+            &_active
+                position: absolute
+                top: 15px
             &_buttons
                 display: none
     .first
@@ -158,5 +186,47 @@
                     display: none
 
     .sixth
-        width: 390px
+        width: 343px
         padding: 23px
+        border-radius: 50px
+        .form_header
+            &_title
+                font-size: 24px
+                margin-bottom: 40px
+            &_descr
+                font-size: 24px
+        .form_block
+            margin: 0
+            .form_section
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                &_input
+                    +form_pattern(300px, 53px)
+                &_input_big
+                    +form_pattern(300px, 53px)
+                &_textarea
+                    +form_pattern(300px, 53px)
+                    margin-bottom: 52px
+                    padding: 17px 42px 42px 42px
+                &_submit
+                    +purple_btn(292px, 48px)
+    footer
+        width: 343px
+        padding: 23px
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+        .footer_menu
+            display: none
+        .footer_submenu
+            display: none
+        .footer_social
+            gap: 25px
+            &_menu
+                margin-bottom: 20px
+        h2
+            width: 293px
+            line-height: 50px
